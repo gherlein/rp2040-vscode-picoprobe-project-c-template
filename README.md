@@ -10,11 +10,15 @@ This assumes that
 3. You have installed the picoprobe uf2 to one Pico, and it is connected to the other Pico with the correct wiring (refer again to Appendix A).
 
 ## Usage
-
 1. Make a project directory in your pico-sdk parent directory (usually `~/pico`, with sdk at `~/pico/pico-sdk`), e.g. make `~/pico/my-project`.
 2. Press [Use this template], or, download this template as a zip.
 3. Clone your repository/Unzip the downloaded folder to your new project directory.
 4. Write whatever you want in main.c, add more files, go wild...
+5. Create a "build" directory (mkdir build)
+6. Create the makefile (cmake ..)
+7. Build! (make or make -JX where X is the number of cores you have)
 
+## Flashing the Pico (NEW)
+1. The makefile now supports direct flashing of the pico (make flash) - see the script "flash" to see what it does
 
 
