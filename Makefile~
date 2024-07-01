@@ -1,0 +1,26 @@
+.PHONY: build flash
+
+ELF = build/picow_access_point_poll.elf
+
+dummy:
+	@echo "Please specify a target to build"
+
+build: 
+	@echo "Building the project"
+	cd build;cmake ..;make -j8
+
+prep:
+	mkdir build;cd build;rm -rf *;cmake ..
+
+flash: build ${ELF}
+	@echo "Flashing the project"
+	@echo "Please make sure the board is connected to the picoprobe"
+	./flash ${ELF}
+
+clean:
+	-rm -rf build
+	-mkdir build
+	-rm *~
+
+allow:
+	# alternate:  source envrc	
