@@ -18,9 +18,9 @@ flash: build ${ELF}
 	./flash ${ELF}
 
 clean:
-	-rm -rf build
-	-mkdir build
-	-rm *~
+	-@rm -rf build
+	-@mkdir build
+	-@rm *~ || true
 
 allow:
 	# alternate:  source envrc	
