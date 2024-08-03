@@ -1,17 +1,19 @@
-# Visual Studio Code-Ready Template Project for RP2040 using Picoprobe
+# Pico Tempate with PicoProbe and Optional VSCode
 
 A template project for quick-starting C-based RP2040 Raspberry Pi Pico projects in Visual Studio Code, using the picoprobe programmer.
 
 ## Prerequisites
 
 This assumes that 
+
 1. You have already installed OpenOCD with picoprobe, according to the steps in [Getting Started](https://datasheets.raspberrypi.org/pico/getting-started-with-pico.pdf), Appendix A
 2. Your VSCode has already been configured according to the steps in [Getting Started](https://datasheets.raspberrypi.org/pico/getting-started-with-pico.pdf), Chapter 7
 3. You have installed the picoprobe uf2 to one Pico, and it is connected to the other Pico with the correct wiring (refer again to Appendix A).
+4. OR, you bought a [PicoProbe](https://www.raspberrypi.com/products/debug-probe/) - [Amozon Link](https://www.amazon.com/GeeekPi-Raspberry-Connetor-RP2040-Microcontroller/dp/B0C5XNQ7FD)
 
 ## Pico SDK installation and references
 
-The easiest is if you are using Ubuntu or Debian Linux (which includes the RPi).  Follow these instructions to use a great script to do 99% of the work for you:
+The easiest is if you are using Ubuntu or Debian Linux (which includes the RPi - Raspberry Pi recommends just using a Pi as your dev box).  Follow these instructions to use a great script to do 99% of the work for you:
 
 [Installation Insructuons](https://learn.arm.com/learning-paths/microcontrollers/rpi_pico/sdk/)
 
